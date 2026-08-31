@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Iniciar sesión - Café que vende Café</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f3e5d8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .login-box {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      width: 300px;
+      text-align: center;
+    }
+    .login-box img {
+      width: 90px;
+      margin-bottom: 10px;
+      border-radius: 50%;
+    }
+    h1 {
+      font-size: 20px;
+      color: #4b2e2b;
+      margin-bottom: 20px;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      background: #4b2e2b;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background: #6b4a3a;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-box">
+    <img src="https://picsum.photos/seed/coffeebeans/200" alt="Café">
+    <h1>Café que vende Café</h1>
+    <form onsubmit="window.location.href='inicio.html'; return false;">
+      <input type="text" placeholder="Usuario" required>
+      <input type="password" placeholder="Contraseña" required>
+      <button type="submit">Ingresar</button>
+    </form>
+  </div>
+
+</body>
+</html>
